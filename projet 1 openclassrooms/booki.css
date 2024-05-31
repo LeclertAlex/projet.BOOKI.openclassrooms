@@ -838,7 +838,6 @@
     }
 }  
 
-
 /*                    activiter marseille                    */
 
 .ActiMarseille{
@@ -863,16 +862,15 @@ margin-bottom: 70px;
 }
 
 .cartActiMars img {
-    width: 300px;
-    height: 420px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 80%;
+    height: 130%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    object-fit: cover;
 }
 
 .position-text-Acti{
-    width: 300px;
+    width: 80%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -914,30 +912,6 @@ margin-bottom: 70px;
     }
 }
 
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .ActiMarseille {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .container-acti{
-        margin-right: 0;
-    }
-
-    .cartActiMars img {
-        width: 190px;
-        height: 200px;
-    } 
-
-    .position-text-Acti{
-        width: 190px;
-        height: 70px;
-        display: flex;
-        align-items: center;
-    }
-
-} 
-
 /*                       footer                      */
 
 .footer {
@@ -958,8 +932,7 @@ margin-bottom: 70px;
 
 .footer h3 {
     margin: 0;
-    font-family: "Raleway", sans-serif;
-    margin-top: 20px; 
+    font-family: "Raleway", sans-serif; 
 }
 
 .Apropos {
@@ -992,10 +965,3 @@ margin-bottom: 70px;
         margin-top: 30px;
     }
 }
-
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .footer{
-        margin: 5%;
-        margin-bottom: 0;
-    }
-} 
