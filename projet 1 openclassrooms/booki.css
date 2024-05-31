@@ -105,18 +105,9 @@
 }
 /*                Fin Media query  écrans de 375px de largeur            */
 
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .logo {
-        margin-left: 5%;
-    }
-
-    .position-text-header {
-        margin-right: 5%; 
-    }
-}
 
 
-/*                 fin  hader                            */
+/*                 fin media query hader                            */
 
 
 
@@ -164,16 +155,8 @@
 
 
 
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .presentation {
-        margin-left: 5%;
-    }
 
-    .presentation h1 {
-        margin-right: 0;
-        font-size: 28px;
-    }
-}
+
 
 
 /* recherche */
@@ -279,17 +262,6 @@
         display: flex;
     }
 
-}
-
-
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .barre-recherche {
-        margin-left: 5%;
-    }
-
-    .barre-bleue{
-        top: 0%;
-    }
 }
 
 /*                    section du filtre                */
@@ -406,11 +378,11 @@
 
 @media screen and (max-width: 430px) {
     .filtre {
-        margin-left: 20px;
+        margin-left: 10px;
         margin-top: 20px;
-        grid-gap: 20px;
+         grid-gap: 20px;
         display: grid;
-        grid-template-columns: 150px 150px;
+        grid-template-columns: 150px 150px; /* Réduire la taille des colonnes de la grille */
         justify-items: start;
     }
 
@@ -486,21 +458,6 @@
 
 }
 
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .filtre {
-        margin-left: 5%;
-        flex-wrap: wrap;
-    }
-
-    .filtrediv {
-        order: -1;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    
-    
-}
-
 /*barre info*/
 
 .bare.information {
@@ -557,11 +514,8 @@
 }
 /*                fin info 430px                           */
 
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .bare.information {
-        margin-left: 5%;
-    }
-}
+
+
 
 /*                                  hebergement hotel                                     */
 
@@ -599,7 +553,6 @@
 
 .row .cartehotel {
     margin-bottom: 20px;
-    padding: 4px;
 }
 
 
@@ -612,27 +565,26 @@
 .cartehotel {
     margin-left: 30px;
     background-color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .cartehotel img {
-    width: 250px;
-    height: 124px;
-    padding: 5px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
+    width: 230px;
+    height: 120px;
+    margin: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .cartehotel p {
     font-family: "Raleway", sans-serif;
     padding: 2.5px 10px;
-    margin: 1px;
+    margin: 0;
     font-size: 16px;
     color: #333333;
-    display: flex;
+    display: flex; 
 }
 
 
@@ -640,8 +592,6 @@
     display: flex;
     color: #0065FC;
     margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 2px;
 }
 
 
@@ -652,18 +602,8 @@
 /*                     POPULAIRE                         */
 .populaires {
     background-color: #F2F2F2;
-    margin-left: 30px;
+    margin-left: 50px;
     border-radius: 10px;
-}
-
-.dessus-pop{
-    display: flex;
-    justify-content: space-between;
-}
-
-.fa-chart-line:before{
-    color: #0065FC;
-    margin-right: 20px;
 }
 
 .column{
@@ -683,9 +623,9 @@
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
-    padding: 5px;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .column:last-child .cartehotel{
@@ -695,12 +635,10 @@
 
 
 .column .cartehotelPOP img {
-    width: 123px;
-    height: 140px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    width: 90px;
+    height: 130px;
+    border-radius: 10px;
     margin-right: 20px;
-    object-fit: cover;
 }
 
 .populaires .cartehotelPOP .nomGras {
@@ -789,56 +727,6 @@
 
 }
 
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .hebergements{
-        flex-direction: column;
-    }
-
-    .HébergMarseille {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
-    }
-
-    .row {
-        display: flex;
-        margin: 0;
-    }
-
-    .populaires {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .dessus-pop{
-        gap: 600px;
-    }
-
-    .column{
-        flex-direction: row;
-    }
-
-    .cartehotelPOP {
-        margin-right: 10px;
-    }
-
-    .column .cartehotelPOP img {
-        width: 90px;
-        height: 140px;
-    }
-
-    .nomGras{
-        font-size: 16px;
-    }
-
-    .position-info{
-        width: 170px;
-    }
-}  
-
-
 /*                    activiter marseille                    */
 
 .ActiMarseille{
@@ -863,16 +751,15 @@ margin-bottom: 70px;
 }
 
 .cartActiMars img {
-    width: 300px;
-    height: 420px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 80%;
+    height: 130%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    object-fit: cover;
 }
 
 .position-text-Acti{
-    width: 300px;
+    width: 80%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -914,30 +801,6 @@ margin-bottom: 70px;
     }
 }
 
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .ActiMarseille {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .container-acti{
-        margin-right: 0;
-    }
-
-    .cartActiMars img {
-        width: 190px;
-        height: 200px;
-    } 
-
-    .position-text-Acti{
-        width: 190px;
-        height: 70px;
-        display: flex;
-        align-items: center;
-    }
-
-} 
-
 /*                       footer                      */
 
 .footer {
@@ -958,8 +821,7 @@ margin-bottom: 70px;
 
 .footer h3 {
     margin: 0;
-    font-family: "Raleway", sans-serif;
-    margin-top: 20px; 
+    font-family: "Raleway", sans-serif; 
 }
 
 .Apropos {
@@ -992,10 +854,3 @@ margin-bottom: 70px;
         margin-top: 30px;
     }
 }
-
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .footer{
-        margin: 5%;
-        margin-bottom: 0;
-    }
-} 
